@@ -21,8 +21,8 @@ password varchar(50) not null);
 create table if not exists users_roles(
 user_id integer not null,
 role_id integer not null,
-foreign key (user_id) references users(id),
-foreign key (role_id) references roles(id)
+foreign key (user_id) references users(id) on delete cascade,
+foreign key (role_id) references roles(id) on delete cascade
 );
 
 insert into manufacturers (name) values ('CleverMind');
