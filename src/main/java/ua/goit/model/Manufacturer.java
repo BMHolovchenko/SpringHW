@@ -3,10 +3,10 @@ package ua.goit.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "products")
-public class Product {
+@Table(name = "manufacturers")
+public class Manufacturer {
     @Id
-    @Column(name = "id", nullable = false)
+    @Column(name = "id", nullable = false, columnDefinition = "BINARY(16)")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
@@ -29,7 +29,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "Manufacturer{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
