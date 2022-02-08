@@ -3,9 +3,7 @@ package ua.goit.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ua.goit.model.Product;
-import ua.goit.model.User;
 import ua.goit.repository.ProductRepository;
-import ua.goit.repository.UserRepository;
 
 import java.util.List;
 import java.util.Optional;
