@@ -8,15 +8,18 @@
 <body>
 <div class="container-fluid text-center">
 	<h1>Users Page</h1>
-<a class="h2" th:href="@{/users}">Manage Users</a></h2>
+<a class="h2" th:href="@{/users}">Users</a></h2>
 </div>
 <div class="container-fluid text-center">
 	<h1>Products Page</h1>
-	<a class="h2" th:href="@{/products}">Manage Products</a></h2>
+	<a class="h2" th:href="@{/products}">Products</a></h2>
 </div>
 <div class="container-fluid text-center">
 	<h1>Manufacturers Page</h1>
-	<a class="h2" th:href="@{/manufacturers}">Manage Manufacturers</a></h2>
+	<a class="h2" th:href="@{/manufacturers}">Manufacturers</a></h2>
 </div>
+<form th:action="@{/logout}" method="post">
+	<input type="submit" value="Logout" />
+</form>
 </body>
 </html>
